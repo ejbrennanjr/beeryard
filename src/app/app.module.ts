@@ -10,6 +10,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroService } from './hero.service';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { BeersComponent } from './beers/beers.component';
+import { BeersService } from './beers.service';
+import { NewsComponent } from './news/news.component';
+import { NewsService } from './news.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { EventsComponent } from './events/events.component';
+import { EventsService } from './events.service';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -17,7 +26,13 @@ import { HeroService } from './hero.service';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent,
+    NewsComponent,
+    NavbarComponent,
+    EventsComponent,
+    BeersComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +40,7 @@ import { HeroService } from './hero.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [HeroService],
+  providers: [HeroService, BeersService, NewsService, EventsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
