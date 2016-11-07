@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Beer } from '../beer';
-import { BeersService } from '../beers.service';
+import { Beer } from './beer';
+import { BeersService } from './beers.service';
 
 
 @Component({
@@ -20,6 +20,7 @@ export class BeersComponent implements OnInit {
   }
 
   getBeers(): void {
+    console.log('hi')
     this.beersService.getBeers()
     	.then(returnedBeers=>this.beers = returnedBeers);
   }

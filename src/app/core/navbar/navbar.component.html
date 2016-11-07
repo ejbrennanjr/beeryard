@@ -14,29 +14,19 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li 
-       		[class.active]="'beers' === selectedNav" 
-			(click)="onSelect('beers')">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         		<a routerLink="/beers">Beers</a>
         </li>
-        <li 
-        	[class.active]="'news' === selectedNav" 
-			(click)="onSelect('news')">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         		<a routerLink="/news">News</a>
         </li>
-        <li 
-        	[class.active]="'events' === selectedNav" 
-			(click)="onSelect('events')">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         		<a routerLink="/events">Events</a>
         </li>
-        <li 
-        	[class.active]="'favorites' === selectedNav" 
-			(click)="onSelect('favorites')">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         		<a routerLink="/favorites">Favorites</a>
         </li>             
-        <li 
-        	[class.active]="'about' === selectedNav" 
-			(click)="onSelect('about')">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         		<a routerLink="/about">About</a>
         </li>             
 

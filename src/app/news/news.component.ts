@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsItem } from '../newsItem';
-import { NewsService } from '../news.service';
+import { NewsItem } from './newsItem';
+import { NewsService } from './news.service';
 
 
 @Component({

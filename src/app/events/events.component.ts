@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Event } from '../event';
-import { EventsService } from '../events.service';
+import { Event } from './event';
+import { EventsService } from './events.service';
 
 
 @Component({
